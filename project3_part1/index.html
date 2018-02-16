@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>    
+    <title>Hotel Reservations</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hotel Reservations">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+	<script src="scripts/reservations.js"></script>
+  </head>  
+  <body>
+    <header>
+      <h1>Reservation Request</h1>
+    </header>    
+    <main> 
+	<form id="reservation_form" name="reservation_form" action="submit.html" method="get">
+	   <fieldset>
+			<legend>General Information</legend>
+			<label for="arrival_date">Arrival Date:</label>
+            <input type="text" id="arrival_date" name="arrival_date">
+            <span>*</span><br>
+
+            <label for="nights_staying">Nights:</label>
+            <input type="text" id="nights_staying" name="nights_staying">
+            <span>*</span><br>
+			
+			<label for "adults">Adults:</label>
+			<select name="adults" id="adults">
+			<option value="1" selected>1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			</select><br>
+		
+			<label for "children">Children:</label>
+			<select name="children" id="children">
+			<option value="0" selected>0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			</select>
+		</fieldset>
+		<fieldset id="preferences">
+			<legend>Preferences</legend>
+			Room type:
+			<input type="radio" name="room_type" id="standard" value="standard" checked>
+			<label for="standard">Standard</label>
+			<input type="radio" name="room_type" id="business" value="business">
+			<label for="business">Business</label>
+			<input type="radio" name="room_type" id="suite" value="suite">
+			<label for="suite">Suite</label><br>
+			
+			Bed type:
+			<input type="radio" name="bed_type" id="king" value="king" checked>
+			<label for="king">King</label>
+			<input type="radio" name="bed_type" id="double" value="double">
+			<label for="double">Double</label><br>
+			
+			<input type="checkbox" name="smoking" id="smoking" value="smoking">
+			<label for="smoking">Smoking</label>
+		</fieldset>
+		<fieldset>
+			<legend>Contact Information</legend>
+			<label for="customer_name">Name:</label>
+            <input type="text" id="customer_name" name="customer_name">
+            <span>*</span><br>
+
+            <label for="customer_email">Email:</label>
+            <input type="text" id="customer_email" name="customer_email">
+            <span>*</span><br>
+
+            <label for="phone_number">Phone Number:</label>
+            <input type="text" id="phone_number" name="phone_number" placeholder="999-999-9999">
+            <span>*</span>
+		</fieldset>
+		<input type="button" id="submit_button" value="Submit Request">
+        </form>
+    </main> 
+  </body>
+</html>

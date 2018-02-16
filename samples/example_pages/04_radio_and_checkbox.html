@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Radio and Checkboxes</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="brief description of the page">
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="stylesheet" href="../css/normalize.css">
+      <link rel="stylesheet" href="../css/main.css">
+  </head>
+
+  <body>
+    <form name="myform" action="../confirm.php" method="get">
+      Crust:<br>
+      <input type="radio" name="crust" value="thin">Thin Crust<br>
+      <input type="radio" name="crust" value="deep" checked>Deep Dish<br>
+      <input type="radio" name="crust" value="hand">Hand Tossed<br><br>
+      Toppings:<br>
+      <input type="checkbox" name="topping[]" value="pepperoni">Pepperoni<br>
+      <input type="checkbox" name="topping[]" value="mushrooms">Mushrooms<br>
+      <input type="checkbox" name="topping[]" value="olives">Olives
+      <br><br>
+      <input type="submit" value="Submit Order">
+    </form>
+  </body>
+</html>
+
+
+<!-- radio buttons:
+        name attribute - use same name on radio buttons, different name on checkboxes
+        An array may also be used for the name attribute on checkboxes  name="toppings[]" -->
+        

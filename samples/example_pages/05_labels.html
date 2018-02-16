@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Using Labels</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="brief description of the page">
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="stylesheet" href="../css/normalize.css">
+      <link rel="stylesheet" href="../css/main.css">
+  </head>
+
+  <body>
+    <form name="order" action="../confirm.php">
+      <label for="quantity">Quantity:</label>
+      <input type="text" name="quantity" id="quantity" value="1" size="5"><br><br>
+        Crust:<br>
+        <input type="radio" name="crust" id="crust1" value="thin">
+        <label for="crust1">Thin Crust</label><br>
+        <input type="radio" name="crust" id="crust2" value="deep">
+        <label for="crust2">Deep Dish</label><br>
+        <input type="radio" name="crust" id="crust3" value="hand">
+        <label for="crust3">Hand Tossed</label><br><br>
+        
+        Toppings:<br>
+        <input type="checkbox" name="topping1" id="topping1" value="pepperoni">
+        <label for="topping1">Pepperoni</label><br>
+        <input type="checkbox" name="topping2" id="topping2" value="mushrooms">
+        <label for="topping2">Mushrooms</label><br>
+        <input type="checkbox" name="topping3" id="topping3" value="olives">
+        <label for="topping3">Black Olives</label><br><br>
+        
+        <input type="submit" name="submit" value="Submit Order">
+    </form>
+  </body>
+</html>
+
+
+<!-- labels display text; use the for attribute to specify the id of the related control;
+     this makes writing the css to align the controls easier  (see example 11.11) 
+     
+     Using label for with the radio button or checkbox input element, rather than just the input element,
+     makes the label clickable (better for accessibility)
+     
+     An alternative to the 'for' attribute for the label is to embed the input element within the label:
+       <label><input type="radio" name="crust">Thin crust</input></label>
+     -->

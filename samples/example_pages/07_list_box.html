@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>List Box</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="brief description of the page">
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="stylesheet" href="../css/normalize.css">
+      <link rel="stylesheet" href="../css/main.css">
+  </head>
+
+  <body>
+    <form name="myform" action="../confirm.php">
+      Toppings:<br>
+      <select name="toppings" multiple size="3">
+        <option value="pepperoni">Pepperoni</option>
+        <option value="sausage" selected>Sausage</option>
+        <option value="mushrooms">Mushrooms</option>
+        <option value="olives">Black olives</option>
+        <option value="onions">Onions</option>
+        <option value="bacon">Canadian bacon</option>
+        <option value="pineapple">Pineapple</option>
+      </select>
+      <br><br>
+      <input type="submit" value="Submit Order">    
+    </form>
+  </body>
+</html>
+
+
+<!-- list box displays 2 or more elements; can specify how many to display; scroll bar will appear if necessary
+     can use multiple attribute to allow more than 1 item to be selected 
+     
+     if no size specified, default is 1 unless multiple attribute is present, then default size is 4 -->

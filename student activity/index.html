@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	  <title>Form Practice</title>
+	  <meta name="description" content="various input elements">
+	  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">    
+  </head>
+
+  <body>
+    <header>
+      <h1>Student Information</h1>
+    </header>
+	
+    <main>
+    
+      <form action="submit.html">
+        <label for="name">Enter your name:</label>
+        <input type="text" name="student_name" id="name">
+        <br>
+        
+        Class Rank:<br>
+        <input type="radio" name="class_rank" id="freshman" value="freshman">
+        <label for="freshman">Freshman</label><br>
+        <input type="radio" name="class_rank" id="sophomore" value="sophomore">
+        <label for="sophomore">Sophomore</label><br>
+        <input type="radio" name="class_rank" id="junior" value="junior">
+        <label for="junior">Junior</label><br>
+        <input type="radio" name="class_rank" id="senior" value="senior">
+        <label for="senior">Senior</label><br><br>
+        <br>
+        
+        <label for "hours">Credit hours completed:</label>
+        <select name="crhours" id="hours">
+          <option value="0-10" selected>0-10</option>
+          <option value="11-20">11-20</option>
+          <option value="21-30">21-30</option>
+          <option value="31-40">31-40</option>
+          <option value="41-50">41-50</option>
+          <option value="51-60">51-60</option>
+          <option value="61-70">61-70</option>
+          <option value="71-80">71-80</option>
+          <option value="81-90">81-90</option>
+          <option value="91-100">91-100</option>
+          <option value="101-110">101-110</option>
+          <option value="111-120">111-120</option>
+          <option value="121+">121+</option>
+        </select><br>
+        <br>
+        
+        <input type="submit" value="Process Info">
+        <input type="reset" value="Clear Form">
+        
+      </form>
+      
+    </main>
+
+    <footer>
+        CS3800 - Form Elements
+    </footer>
+  </body>
+
+</html>

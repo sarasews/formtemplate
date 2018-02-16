@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>Buttons</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="brief description of the page">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+  <body>
+    <form name="myform" action="../confirm.php" method="get">
+      <input type="button" name="message" value="Alert Me" onClick="return alert('Hello there!');">
+      <input type="submit" name="checkout" value="Checkout">
+    </form>
+  </body>
+</html>
+
+     
+<!-- Input buttons:
+      button with onclick: this in-line javascript code shows an alert message (should avoid inline code)
+      submit button: sends form's data to sample.php (the file specified in the form's action attribute)
+      reset button: resets all fields to default value
+-->

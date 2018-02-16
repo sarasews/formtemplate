@@ -1,0 +1,55 @@
+
+ figure figcaption {
+   width: 300px;
+ }
+
+main {
+  display: flex;
+  
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+figure img {
+	transition: 3s;
+	-webkit-transition: 3s;
+}
+
+#image1 {
+background-image: url("images/baby4.jpg");
+width:300px;
+height:187px;
+}
+#image1:hover {
+background-image: url("images/baby4b.jpg");
+}
+			
+#image2 {
+background-image: url("images/baby6.jpg");
+width:300px;
+height:225px;
+}
+#image2:hover {
+	background-image: url("images/baby6b.jpg");
+}
+
+#skew_neg_x:hover {
+	transform: skewX(-60deg);
+	-webkit-transform: skewX(-60deg);
+}
+
+#skew_pos_y:hover {
+	transform: skewY(60deg);
+	-webkit-transform: skewY(60deg);
+}
+
+#grayscale {
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+#invert{
+  -webkit-filter: invert(100%);
+  -moz-filter: invert(100%);
+  filter: invert(100%);
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Text Fields</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="brief description of the page">
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="stylesheet" href="../css/normalize.css">
+      <link rel="stylesheet" href="../css/main.css">
+  </head>
+
+  <body>
+    <form name="myform" action="../confirm.php" method="get">
+      <br><br>
+      Quantity: <input type="text" name="quantity" value="1" size="5" readonly><br><br>
+      Username: <input type="text" name="username" autofocus><br><br>
+      Password: <input type="password" name="password" placeholder="Enter your password" maxlength="6"><br><br>
+      <input type="hidden" name="productid" value="widget"><br><br>
+      <input type="submit" name="submit" value="Submit">
+    </form>
+  </body>
+</html>
+
+
+<!-- input element type attribute specifies type of text:  text, password, hidden
+        password: will display bullets or asterisks when user enters data
+        hidden: user will not see this input, but it will be submitted with the form  -->

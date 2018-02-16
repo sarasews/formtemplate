@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Text area</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="brief description of the page">
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="stylesheet" href="../css/normalize.css">
+      <link rel="stylesheet" href="../css/main.css">
+  </head>
+
+  <body>
+    <form name="myform" action="../confirm.php">
+      Comments:<br>
+      <textarea name="comments" placeholder="If you have any comments, please enter them here.">
+      </textarea>
+      <br><br>
+      <input type="submit" value="Send Comments">
+    </form>
+  </body>
+</html>
+
+
+<!-- text area allows user to enter multi-line text
+     placeholder attribute - will "disappear" once user starts typing
+     cols - specifies width; default in html5 is 20
+     rows - number of visible lines
+     
+     may want to set cols and rows AND still specify height and width in css to support all browsers -->
